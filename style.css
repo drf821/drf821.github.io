@@ -1,0 +1,143 @@
+/*
+File:   /~dfaubel/public_page.html
+91.61 GUI Programming 1 Assignment 2 Creating Your First Web Page
+Daniel R. Faubel, UMass Lowell Computer Science, daniel_faubel@student.uml.edu
+Copyright (c) 2019 Daniel R. Faubel. All rights reserved.
+updated by DRF on September 19, 2019 at 8:27: Transfered over source files to the cs server
+updated by DRF on September 19, 2019 at 9:34: Cleaned up html code for validation. Will now validate on validator.nu.
+updated by DRF on September 20, 2019 at 9:00: Removed excess Java Script code
+updated by DRF of October 1, 2019 at 10:30: Restructured to be a proper HTML5 document.
+Added Cross image aboce IMB link.
+updated by DRF on October 5, 2019 at 12:21: added in a link to the assignment 3 page.
+updated by DRF on October 9, 2019 at 6:13: added padding, changed font size
+*/
+
+
+#wrapper {
+  font-family: Verdana, sans-serif;
+  font-size: 18pt;
+  border-radius: 100px;
+}
+
+#wrapper h1{
+  font-size: 24pt;
+  }
+
+#wrapper h2{
+  font-size: 18pt;
+}
+
+#wrapper p, ul, li{
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+#wrapper body{
+  padding: 10px 0px 10px 0px;
+}
+
+body{
+  background-image: URL("Peru_mountains_background4.jpg");
+  padding-left: 50px;
+}
+* {box-sizing:border-box}
+
+#wrapper a{
+  font-size: 16px;
+}
+
+#personal ul{
+  display: inline;
+}
+
+.body{
+    background-color:LightGray;
+}
+.slideshow_container {
+  max-width: 100px;
+  position: relative;
+  margin:auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding:16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext{
+  color:#f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
